@@ -1,9 +1,4 @@
-#  The Legend of Zelda: Encyclopedia 
-
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)](https://firebase.google.com/)
-[![Leaflet](https://img.shields.io/badge/Leaflet-199903?style=for-the-badge&logo=Leaflet&logoColor=white)](https://leafletjs.com/)
-
+  The Legend of Zelda: Encyclopedia 
 
   Project Overview
 This encyclopedia provides a comprehensive database of characters, games, and items from the *The Legend of Zelda* franchise. Built with **React** and powered by **Firebase**, it serves as a modern hub for Hyrule's history.
@@ -22,8 +17,8 @@ To provide a state-of-the-art experience, we have integrated the following indus
 
 | Component | Purpose | Link |
 | :--- | :--- | :--- |
-| Firebase | Real-time forum persistence and document hosting. | [Firebase](https://firebase.google.com/) |
-| React Icons | Premium vector iconography for social and UI elements. | [React Icons](https://github.com/react-icons/react-icons) |
+| Firebase | Real-time forum persistence and document hosting. | 
+| React Icons | Premium vector iconography for social and UI elements. |
 
  Design Inspiration
 This project's aesthetic is heavily influenced by the Zelda franchise's rich history and modern UX trends.
@@ -35,21 +30,16 @@ This project's aesthetic is heavily influenced by the Zelda franchise's rich his
   Educational Resources & Tutorials
 The following resources were instrumental in the development of this project:
 *   Vite Setup: [Vite Official Guide](https://vitejs.dev/guide/)
-* React Router: [Navigation Patterns in React](https://reactrouter.com/)
-*   README Template: [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-*   Firebase Integration*: [Firestore Quickstart](https://firebase.google.com/docs/firestore/quickstart)
+* React Router
+*   README Template
+*   Firebase Integration
 
  RSS Ecosystem
-Our application includes a dedicated **RSS Information Page**  that helps users subscribe to critical Hyrule news. 
+Our application includes a dedicated RSS Information Page that helps users subscribe to critical Hyrule news. 
 
-   **RSS feed reader screenshot**: 
-    ![RSS Feed Reader screenshot](./src/assets/rss-screenshot.png)
-    *(Note: This screenshot demonstrates our RSS feeds pointing directly to our hosted firestore data pages).*
-
- Deployment & Github
-*   GitHub Repository: [https://github.com/USER/zelda-encyclopedia](https://github.com/USER/zelda-encyclopedia)
+  Deployment & Github
+*   GitHub Repository: https://github.com/pr4032943-stack/zelda-enciclopedia.git
 *   Branches: This project maintains dedicated `main` (production) and `develop` (feature implementation) branches for robust version control.
-*   Live Preview: [https://zelda-project.web.app](https://zelda-project.web.app)
 
 
 
