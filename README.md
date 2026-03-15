@@ -15,10 +15,10 @@ The home page (available at `/` and `/home`) introduces the user to the legendar
  Third-Party Component Integrations
 To provide a state-of-the-art experience, we have integrated the following industry-standard tools:
 
-| Component | Purpose | Link |
+| Component | Purpose 
 | :--- | :--- | :--- |
-| Firebase | Real-time forum persistence and document hosting. | 
-| React Icons | Premium vector iconography for social and UI elements. |
+| Firebase | Real-time forum persistence and document hosting. 
+| React Icons | Premium vector iconography for social and UI elements. 
 
  Design Inspiration
 This project's aesthetic is heavily influenced by the Zelda franchise's rich history and modern UX trends.
