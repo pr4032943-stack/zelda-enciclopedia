@@ -1,0 +1,131 @@
+.items-page {
+  padding: 40px 0;
+  perspective: 1000px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.item-card {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0a110a 0%, #1b2e1a 100%);
+  border: 1px solid var(--color-accent-gold);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+}
+
+.item-card::before, .item-card::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--color-accent-gold);
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.item-card::before { top: 12px; left: 12px; border-right: none; border-bottom: none; }
+.item-card::after { bottom: 12px; right: 12px; border-left: none; border-top: none; }
+
+.item-card:hover::before { transform: translate(-5px, -5px); opacity: 1; border-color: #fff; }
+.item-card:hover::after { transform: translate(5px, 5px); opacity: 1; border-color: #fff; }
+
+.item-card:hover {
+  transform: translateY(-10px);
+  border-color: #fff;
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.3);
+}
+
+.item-image {
+  height: 300px;
+  background: radial-gradient(circle at center, #2a4728, #050a05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* Mystical Aura Pulse */
+.item-image::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle, var(--color-accent-gold-glow) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: auraPulse 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes auraPulse {
+  0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.3; }
+  50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.3; }
+}
+
+.item-image::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+.item-image img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    z-index: 2;
+    transition: transform 0.6s ease;
+    filter: drop-shadow(0 0 20px rgba(255, 204, 0, 0.4));
+}
+
+.item-card:hover .item-image img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h2 {
+  font-size: 1.6rem; /* Slightly smaller title */
+  color: var(--color-accent-gold);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.item-function {
+  text-align: center;
+  margin-top: auto;
+}
+
+.description {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .items-grid { gap: 20px; }
+  .item-image { height: 250px; }
+  .item-card { height: 450px; }
+}

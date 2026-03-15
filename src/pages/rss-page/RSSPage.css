@@ -1,0 +1,49 @@
+.rss-page {
+    padding: 40px 0;
+    line-height: 1.6;
+}
+
+.rss-intro,
+.how-to-use {
+    margin-bottom: 40px;
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #ff9d00;
+}
+
+.feeds-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.feed-card {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.feed-card:hover {
+    transform: translateY(-5px);
+}
+
+.feed-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.rss-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff9d00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rss-link:hover {
+    text-decoration: underline;
+}

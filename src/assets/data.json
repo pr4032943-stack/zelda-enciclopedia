@@ -1,0 +1,852 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Link",
+      "image": "/images/personajes/TotK_-_Link_imagen_oficial.webp",
+      "race": "Hylian",
+      "game": "Todos los juegos principales",
+      "role": "El Héroe Elegido",
+      "abilities": [
+        "Esgrima maestra",
+        "Tiro con arco",
+        "Uso de magia",
+        "Equitación"
+      ],
+      "description": "El eterno héroe de Hyrule. Destinado a portar la Trifuerza del Valor y la Espada Maestra para derrotar al mal."
+    },
+    {
+      "id": 2,
+      "name": "Zelda",
+      "image": "/images/personajes/Zelda_BotW_Artwork.png",
+      "race": "Hylian",
+      "game": "Todos los juegos principales",
+      "role": "Princesa de Hyrule",
+      "abilities": [
+        "Magia sagrada",
+        "Profecía",
+        "Telepatía"
+      ],
+      "description": "La sabia y poderosa monarca de Hyrule, portadora de la Trifuerza de la Sabiduría."
+    },
+    {
+      "id": 3,
+      "name": "Ganondorf",
+      "image": "/images/personajes/Ganondorf_The_Legend_of_Zelda_Tears_of_The_Kingdom_Perfil.webp",
+      "race": "Gerudo",
+      "game": "Ocarina of Time, Twilight Princess, Tears of the Kingdom",
+      "role": "Rey del Mal",
+      "abilities": [
+        "Magia oscura",
+        "Fuerza sobrehumana",
+        "Transformación"
+      ],
+      "description": "El eterno enemigo nacido de la tribu Gerudo, consumido por la sed de poder y portador de la Trifuerza del Poder."
+    },
+    {
+      "id": 4,
+      "name": "Midna",
+      "image": "/images/personajes/Artwork_Midna_TPHD.webp",
+      "race": "Twili",
+      "game": "Twilight Princess",
+      "role": "Princesa del Crepúsculo",
+      "abilities": [
+        "Magia crepuscular",
+        "Teletransporte",
+        "Manipulación de materia"
+      ],
+      "description": "Una figura misteriosa que inicialmente utiliza a Link para sus propios fines, pero que resulta ser la gobernante exiliada de su mundo."
+    },
+    {
+      "id": 5,
+      "name": "Impa",
+      "image": "/images/personajes/HWEC_-_Impa_Artwork.webp",
+      "race": "Sheikah",
+      "game": "Múltiples juegos",
+      "role": "Protectora de Zelda",
+      "abilities": [
+        "Artes marciales",
+        "Magia Sheikah",
+        "Sigilo"
+      ],
+      "description": "La leal niñera y guardaespaldas de la Princesa Zelda, miembro de la tribu de las sombras."
+    },
+    {
+      "id": 6,
+      "name": "Tingle",
+      "image": "/images/personajes/Tingle_artwork_MM3D.webp",
+      "race": "Hylian (Autoproclamado Hada)",
+      "game": "Majora's Mask, Wind Waker",
+      "role": "Cartógrafo",
+      "abilities": [
+        "Dibujo de mapas",
+        "Flotar con un globo"
+      ],
+      "description": "Un hombre obsesionado con las hadas del bosque que vende mapas a buen precio... o a veces no tan bueno."
+    },
+    {
+      "id": 7,
+      "name": "Skull Kid",
+      "image": "/images/personajes/Skull_Kid_Artwork_3d.webp",
+      "race": "Desconocido",
+      "game": "Ocarina of Time, Majora's Mask",
+      "role": "Antagonista trágico",
+      "abilities": [
+        "Magia ilusoria",
+        "Uso de la Máscara de Majora"
+      ],
+      "description": "Un habitante de los Bosques Perdidos que fue corrompido por el inmenso poder oscuro de la Máscara de Majora."
+    },
+    {
+      "id": 8,
+      "name": "Sheik",
+      "image": "/images/personajes/800px-Sheik_SSBU.png",
+      "race": "Sheikah (Disfraz)",
+      "game": "Ocarina of Time",
+      "role": "Guía misterioso",
+      "abilities": [
+        "Sigilo",
+        "Tocar la Lira",
+        "Agilidad ninja"
+      ],
+      "description": "El alter ego que asume la Princesa Zelda para esconderse de Ganondorf y guiar a Link en su viaje a través del tiempo."
+    },
+    {
+      "id": 9,
+      "name": "Daruk",
+      "image": "/images/personajes/Artwork_de_Darukeru_BotW.webp",
+      "race": "Goron",
+      "game": "Breath of the Wild",
+      "role": "Campeón Goron",
+      "abilities": [
+        "Escudo de Daruk",
+        "Fuerza inmensa"
+      ],
+      "description": "El valiente Campeón de los Goron, piloto de la Bestia Divina Vah Rudania y fiel amigo de Link."
+    },
+    {
+      "id": 10,
+      "name": "Mipha",
+      "image": "/images/personajes/Artwork_de_Mipha_BotW.webp",
+      "race": "Zora",
+      "game": "Breath of the Wild",
+      "role": "Campeona Zora",
+      "abilities": [
+        "Plegaria de Mipha (Curación)",
+        "Dominio de la lanza"
+      ],
+      "description": "Princesa de los Zora y una de las elegidas de Hyrule. Poseía un gran talento curativo y un profundo amor por Link."
+    },
+    {
+      "id": 11,
+      "name": "Revali",
+      "image": "/images/personajes/Artwork_de_Revali_BotW.webp",
+      "race": "Orni (Rito)",
+      "game": "Breath of the Wild",
+      "role": "Campeón Orni",
+      "abilities": [
+        "Furia de Revali (Vuelo)",
+        "Arquería experta"
+      ],
+      "description": "El talentoso y orgulloso Campeón de los Orni. Su habilidad con el arco y su técnica de vuelo eran inigualables en su época."
+    },
+    {
+      "id": 12,
+      "name": "Urbosa",
+      "image": "/images/personajes/Artwork_de_Urbosa_BotW.webp",
+      "race": "Gerudo",
+      "game": "Breath of the Wild",
+      "role": "Campeona Gerudo",
+      "abilities": [
+        "Ira de Urbosa (Relámpagos)",
+        "Destreza con la cimitarra"
+      ],
+      "description": "Líder de las Gerudo y una guerrera formidable que protegía a Zelda como si fuera su propia hija."
+    },
+    {
+      "id": 13,
+      "name": "Sidon",
+      "image": "/images/personajes/Rey_Sidon_Artwork.webp",
+      "race": "Zora",
+      "game": "Breath of the Wild, Tears of the Kingdom",
+      "role": "Príncipe (luego Rey) Zora",
+      "abilities": [
+        "Natación experta",
+        "Fuerza inspiradora"
+      ],
+      "description": "El carismático y optimista hermano de Mipha. Se convierte en un aliado indispensable para Link en su lucha contra Ganon."
+    },
+    {
+      "id": 14,
+      "name": "Fi",
+      "image": "/images/personajes/Artwork_Fay_SS.webp",
+      "race": "Espíritu de la Espada",
+      "game": "Skyward Sword",
+      "role": "Guía del Héroe",
+      "abilities": [
+        "Análisis de datos",
+        "Vuelo",
+        "Conexión con la Espada Maestra"
+      ],
+      "description": "El espíritu que habita en la Espada Maestra, creada por la Diosa Hylia para guiar al héroe elegido."
+    },
+    {
+      "id": 15,
+      "name": "Ghirahim",
+      "image": "/images/personajes/Artwork_de_Grahim_SS.webp",
+      "race": "Demonio (Espíritu de Espada)",
+      "game": "Skyward Sword",
+      "role": "Señor de los Demonios",
+      "abilities": [
+        "Teletransportación",
+        "Invocación de espadas",
+        "Transformación"
+      ],
+      "description": "Un antagonista extravagante y cruel que busca resucitar a su amo, el Heraldo de la Muerte."
+    },
+    {
+      "id": 16,
+      "name": "Vaati",
+      "image": "/images/personajes/Vaati_Humano.webp",
+      "race": "Minish (Picori)",
+      "game": "The Minish Cap, Four Swords",
+      "role": "Mago del Viento",
+      "abilities": [
+        "Magia oscura",
+        "Manipulación del viento",
+        "Transformación en demonio"
+      ],
+      "description": "Un Minish que se dejó corromper por la maldad de los hombres y se convirtió en un poderoso hechicero."
+    },
+    {
+      "id": 17,
+      "name": "Marin",
+      "image": "/images/personajes/Marin_Artwork_LAR.webp",
+      "race": "Hylian (Sueño)",
+      "game": "Link's Awakening",
+      "role": "Habitante de la Isla Koholint",
+      "abilities": [
+        "Canto (Balada del Pez Viento)"
+      ],
+      "description": "Una joven de espíritu libre que sueña con ver mundo más allá de la isla. Es quien rescata a Link cuando naufraga."
+    },
+    {
+      "id": 18,
+      "name": "Beedle",
+      "image": "/images/personajes/beedle.webp",
+      "race": "Hylian",
+      "game": "Múltiples juegos",
+      "role": "Comerciante itinerante",
+      "abilities": [
+        "Comercio",
+        "Transporte de grandes cargas"
+      ],
+      "description": "Un entusiasta vendedor de insectos y suministros que viaja incansablemente por todo Hyrule."
+    },
+    {
+      "id": 19,
+      "name": "Obab (Hestu)",
+      "image": "/images/personajes/Obab.webp",
+      "race": "Kolog",
+      "game": "Breath of the Wild, Tears of the Kingdom",
+      "role": "Músico Kolog",
+      "abilities": [
+        "Expansión de inventario",
+        "Baile con maracas"
+      ],
+      "description": "Un Kolog gigante que ama la música. A cambio de semillas Kolog, utiliza sus maracas mágicas para ampliar las alforjas de Link."
+    },
+    {
+      "id": 20,
+      "name": "Prunia (Purah)",
+      "image": "/images/personajes/Prunia_TotK.webp",
+      "race": "Sheikah",
+      "game": "Breath of the Wild, Tears of the Kingdom",
+      "role": "Investigadora Jefa",
+      "abilities": [
+        "Genio científico",
+        "Desarrollo de tecnología Sheikah"
+      ],
+      "description": "Directora del laboratorio de Hatelia y posteriormente de la investigación en Fuerte Vigía. Responsable de muchos avances tecnológicos."
+    },
+    {
+      "id": 21,
+      "name": "Roteno (Robbie)",
+      "image": "/images/personajes/TotK_Robbie_Model.png",
+      "race": "Sheikah",
+      "game": "Breath of the Wild, Tears of the Kingdom",
+      "role": "Investigador de Guardianes",
+      "abilities": [
+        "Ingeniería antigua",
+        "Creación de equipo ancestral"
+      ],
+      "description": "Un excéntrico científico Sheikah que dedicó su vida a estudiar a los Guardianes y crear tecnología para combatirlos."
+    },
+    {
+      "id": 22,
+      "name": "King Rhoam",
+      "image": "/images/personajes/HWAoC_King_Rhoam_Artwork.webp",
+      "race": "Hylian",
+      "game": "Breath of the Wild",
+      "role": "Último Rey de Hyrule",
+      "abilities": [
+        "Liderazgo",
+        "Conocimiento histórico"
+      ],
+      "description": "Padre de la Princesa Zelda. Su espíritu guía a Link al inicio de su aventura para que despierte su verdadero potencial."
+    },
+    {
+      "id": 23,
+      "name": "Demise",
+      "image": "/images/personajes/demise.webp",
+      "race": "Demonio",
+      "game": "Skyward Sword",
+      "role": "Origen de la Maldición",
+      "abilities": [
+        "Poder absoluto sobre los demonios",
+        "Fuerza divina oscura"
+      ],
+      "description": "El ser supremo del mal cuya derrota dio origen al ciclo eterno de reencarnación del odio que azota Hyrule."
+    },
+    {
+      "id": 24,
+      "name": "Tetra",
+      "image": "/images/personajes/Tetra_WW_HD.webp",
+      "race": "Hylian (Pirata)",
+      "game": "The Wind Waker, Phantom Hourglass",
+      "role": "Capitana Pirata",
+      "abilities": [
+        "Navegación",
+        "Liderazgo",
+        "Manejo de espada"
+      ],
+      "description": "Una joven y audaz capitana pirata que navega por el Gran Mar, ajena inicialmente a su herencia real."
+    },
+    {
+      "id": 25,
+      "name": "Linebeck",
+      "image": "/images/personajes/Linebeck.webp",
+      "race": "Hylian",
+      "game": "Phantom Hourglass",
+      "role": "Capitán del Barco",
+      "abilities": [
+        "Navegación",
+        "Búsqueda de tesoros"
+      ],
+      "description": "Un marinero egocéntrico y algo cobarde que acompaña a Link en busca de tesoros, aunque acaba demostrando tener corazón."
+    },
+    {
+      "id": 26,
+      "name": "Rauru",
+      "image": "/images/personajes/Rauru_TotK.webp",
+      "race": "Zonnan",
+      "game": "Tears of the Kingdom",
+      "role": "Primer Rey de Hyrule",
+      "abilities": [
+        "Poder de la Luz",
+        "Construcción Zonnan",
+        "Sellado de almas"
+      ],
+      "description": "El sabio y poderoso fundador del Reino de Hyrule, descendiente de los dioses Zonnan."
+    },
+    {
+      "id": 27,
+      "name": "Sonia",
+      "image": "/images/personajes/TotK_-_Reina_Sonnia.webp",
+      "race": "Hylian",
+      "game": "Tears of the Kingdom",
+      "role": "Primera Reina de Hyrule",
+      "abilities": [
+        "Control del Tiempo",
+        "Sabiduría Real"
+      ],
+      "description": "La bondadosa reina fundadora de Hyrule, poseedora de un misterioso poder sobre el flujo del tiempo."
+    },
+    {
+      "id": 28,
+      "name": "Maestro Kogg",
+      "image": "/images/personajes/Maestro_Kogg_BOTW.webp",
+      "race": "Sheikah (Clan Yiga)",
+      "game": "Breath of the Wild, Tears of the Kingdom",
+      "role": "Líder del Clan Yiga",
+      "abilities": [
+        "Magia Yiga",
+        "Invocación de esferas",
+        "Maestría en tecnología"
+      ],
+      "description": "El excéntrico pero letal líder del Clan Yiga, juramentado enemigo de Link y leal seguidor de Ganon."
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "The Legend of Zelda",
+      "year": 1986,
+      "originalConsole": "NES",
+      "availablePlatforms": [
+        "NES",
+        "GameCube",
+        "Wii",
+        "Switch"
+      ],
+      "description": "El juego que lo inició todo, estableciendo las bases de la exploración libre y los calabozos.",
+      "image": "/images/juegos/the legend of zelda 1 juego.jpg",
+      "rating": 84
+    },
+    {
+      "id": 2,
+      "title": "Zelda II: The Adventure of Link",
+      "year": 1987,
+      "originalConsole": "NES",
+      "availablePlatforms": [
+        "NES",
+        "GameCube",
+        "Wii",
+        "Switch"
+      ],
+      "description": "Una secuela única que introdujo elementos de rol y desplazamiento lateral.",
+      "image": "/images/juegos/Zelda II The Adventure of Link.jpg",
+      "rating": 78
+    },
+    {
+      "id": 3,
+      "title": "A Link to the Past",
+      "year": 1991,
+      "originalConsole": "SNES",
+      "availablePlatforms": [
+        "SNES",
+        "GBA",
+        "Wii",
+        "Wii U",
+        "Switch"
+      ],
+      "description": "Introdujo los mundos duales (Mundo de la Luz y de la Oscuridad) y profundizó significativamente en la historia.",
+      "image": "/images/juegos/A Link to the Past.jpg",
+      "rating": 95
+    },
+    {
+      "id": 4,
+      "title": "Link's Awakening",
+      "year": 1993,
+      "originalConsole": "Game Boy",
+      "availablePlatforms": [
+        "Game Boy",
+        "GBC",
+        "Switch"
+      ],
+      "description": "Una aventura surrealista fuera de Hyrule, ambientada en la Isla Koholint.",
+      "image": "/images/juegos/Link's Awakening.jpg",
+      "rating": 90
+    },
+    {
+      "id": 5,
+      "title": "Ocarina of Time",
+      "year": 1998,
+      "originalConsole": "Nintendo 64",
+      "availablePlatforms": [
+        "N64",
+        "GameCube",
+        "Wii",
+        "3DS",
+        "Switch"
+      ],
+      "description": "El gran salto a las 3D, a menudo considerado uno de los mejores videojuegos jamás creados.",
+      "image": "/images/juegos/Ocarina of Time.jpg",
+      "rating": 99
+    },
+    {
+      "id": 6,
+      "title": "Majora's Mask",
+      "year": 2000,
+      "originalConsole": "Nintendo 64",
+      "availablePlatforms": [
+        "N64",
+        "GameCube",
+        "Wii",
+        "3DS",
+        "Switch"
+      ],
+      "description": "Una secuela oscura y única basada en un ciclo de 3 días antes de que la luna caiga sobre Términa.",
+      "image": "/images/juegos/Majora's Mask.png",
+      "rating": 95
+    },
+    {
+      "id": 7,
+      "title": "Oracle of Seasons",
+      "year": 2001,
+      "originalConsole": "Game Boy Color",
+      "availablePlatforms": [
+        "GBC",
+        "3DS",
+        "Switch"
+      ],
+      "description": "Enfocado en el combate y el cambio de las estaciones en Holodrum.",
+      "image": "/images/juegos/Oracle of Seasons.webp",
+      "rating": 92
+    },
+    {
+      "id": 8,
+      "title": "Oracle of Ages",
+      "year": 2001,
+      "originalConsole": "Game Boy Color",
+      "availablePlatforms": [
+        "GBC",
+        "3DS",
+        "Switch"
+      ],
+      "description": "Enfocado en los puzles y el viaje en el tiempo entre el pasado y presente de Labrynna.",
+      "image": "/images/juegos/Oracle of Ages.png",
+      "rating": 92
+    },
+    {
+      "id": 9,
+      "title": "The Wind Waker",
+      "year": 2002,
+      "originalConsole": "GameCube",
+      "availablePlatforms": [
+        "GameCube",
+        "Wii U"
+      ],
+      "description": "Presentó un polémico pero ahora amado estilo cel-shading y una gran aventura oceánica.",
+      "image": "/images/juegos/The Wind Waker.jpg",
+      "rating": 96
+    },
+    {
+      "id": 10,
+      "title": "Four Swords Adventures",
+      "year": 2004,
+      "originalConsole": "GameCube",
+      "availablePlatforms": [
+        "GameCube"
+      ],
+      "description": "Una aventura cooperativa única donde hasta cuatro jugadores controlan a Link.",
+      "image": "/images/juegos/Four Swords Adventures.jpg",
+      "rating": 86
+    },
+    {
+      "id": 11,
+      "title": "The Minish Cap",
+      "year": 2004,
+      "originalConsole": "GBA",
+      "availablePlatforms": [
+        "GBA",
+        "Wii U",
+        "Switch"
+      ],
+      "description": "Link conoce a Ezero, un gorro mágico que le permite encogerse al tamaño de los Minish.",
+      "image": "/images/juegos/The Minish Cap.jpg",
+      "rating": 89
+    },
+    {
+      "id": 12,
+      "title": "Twilight Princess",
+      "year": 2006,
+      "originalConsole": "GameCube / Wii",
+      "availablePlatforms": [
+        "GameCube",
+        "Wii",
+        "Wii U"
+      ],
+      "description": "El retorno a un estilo artístico más realista y oscuro, donde Link puede transformarse en lobo.",
+      "image": "/images/juegos/Twilight Princess.jpg",
+      "rating": 95
+    },
+    {
+      "id": 13,
+      "title": "Phantom Hourglass",
+      "year": 2007,
+      "originalConsole": "Nintendo DS",
+      "availablePlatforms": [
+        "DS",
+        "Wii U"
+      ],
+      "description": "Secuela de Wind Waker, utilizando la pantalla táctil para el control y la navegación.",
+      "image": "/images/juegos/Phantom Hourglass.jpg",
+      "rating": 90
+    },
+    {
+      "id": 14,
+      "title": "Spirit Tracks",
+      "year": 2009,
+      "originalConsole": "Nintendo DS",
+      "availablePlatforms": [
+        "DS",
+        "Wii U"
+      ],
+      "description": "Link viaja en tren a través de Hyrule y colabora con el espíritu de la Princesa Zelda.",
+      "image": "/images/juegos/Spirit Tracks.jpg",
+      "rating": 87
+    },
+    {
+      "id": 15,
+      "title": "Skyward Sword",
+      "year": 2011,
+      "originalConsole": "Wii",
+      "availablePlatforms": [
+        "Wii",
+        "Switch"
+      ],
+      "description": "Cronológicamente el primer juego, explica el origen de la Espada Maestra y la maldición de Demise.",
+      "image": "/images/juegos/Skyward Sword.jpg",
+      "rating": 93
+    },
+    {
+      "id": 16,
+      "title": "A Link Between Worlds",
+      "year": 2013,
+      "originalConsole": "Nintendo 3DS",
+      "availablePlatforms": [
+        "3DS"
+      ],
+      "description": "Sucesora espiritual de ALttP, permitiendo a Link fundirse en las paredes como una pintura.",
+      "image": "/images/juegos/A Link Between Worlds.jpg",
+      "rating": 91
+    },
+    {
+      "id": 17,
+      "title": "Tri Force Heroes",
+      "year": 2015,
+      "originalConsole": "Nintendo 3DS",
+      "availablePlatforms": [
+        "3DS"
+      ],
+      "description": "Enfoque cooperativo de tres personas basado en tótems y trajes especiales.",
+      "image": "/images/juegos/Tri Force Heroes.jpg",
+      "rating": 73
+    },
+    {
+      "id": 18,
+      "title": "Breath of the Wild",
+      "year": 2017,
+      "originalConsole": "Wii U / Switch",
+      "availablePlatforms": [
+        "Wii U",
+        "Switch"
+      ],
+      "description": "Redefinió el concepto de mundo abierto ofreciendo libertad total desde el momento que sales del santuario.",
+      "image": "/images/juegos/Breath of the Wild.jpg",
+      "rating": 97
+    },
+    {
+      "id": 19,
+      "title": "Tears of the Kingdom",
+      "year": 2023,
+      "originalConsole": "Switch",
+      "availablePlatforms": [
+        "Switch"
+      ],
+      "description": "Secuela directa de BotW, ampliando Hyrule hacia los cielos y el subsuelo, añadiendo físicas increíbles.",
+      "image": "/images/juegos/Tears of the Kingdom.jpg",
+      "rating": 96
+    },
+    {
+      "id": 20,
+      "title": "Echoes of Wisdom",
+      "year": 2024,
+      "originalConsole": "Switch",
+      "availablePlatforms": [
+        "Switch"
+      ],
+      "description": "Por primera vez Zelda es la protagonista, utilizando réplicas mágicas para resolver acertijos y combatir.",
+      "image": "/images/juegos/Echoes of Wisdom.avif",
+      "rating": 86
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Espada Maestra",
+      "image": "/images/objetos/Artwork_Espada_Maestra_TPHD.webp",
+      "function": "La hoja destructora del mal. Es la única arma capaz de sellar a Ganon y reflejar la magia oscura.",
+      "description": "Forjada inicialmente como la Espada Divina, esta reliquia sagrada elige a su portador y duerme en un pedestal esperando al héroe."
+    },
+    {
+      "id": 2,
+      "name": "Escudo Hyliano",
+      "image": "/images/objetos/Escudo_Hylian_Skyward_Sword.webp",
+      "function": "Proporciona una inigualable defensa física y mágica.",
+      "description": "El escudo tradicional de los Caballeros de Hyrule. Está decorado con el emblema de la Trifuerza y un Pelícaro rojo."
+    },
+    {
+      "id": 3,
+      "name": "Ocarina del Tiempo",
+      "image": "/images/objetos/Artwork_Ocarina_del_Tiempo.webp",
+      "function": "Instrumento mágico capaz de alterar el flujo del tiempo, abrir puertas sagradas y cambiar el clima.",
+      "description": "Un tesoro sagrado de la Familia Real de Hyrule entregado a Link por la Princesa Zelda."
+    },
+    {
+      "id": 4,
+      "name": "Gancho (Hookshot)",
+      "image": "/images/objetos/Gancho_Artwork_OoT.webp",
+      "function": "Se clava en superficies de madera o dianas para atraer a Link hacia ellas o atraer objetos hacia él.",
+      "description": "Un mecanismo accionado por resortes y cadenas crucial para atravesar precipicios."
+    },
+    {
+      "id": 5,
+      "name": "Trifuerza",
+      "image": "/images/objetos/Trifuerza_Completa.webp",
+      "function": "Reliquia omnipotente capaz de conceder cualquier deseo al que la toque.",
+      "description": "Dejada atrás por las Diosas de Oro tras crear el mundo. Consiste en tres virtudes: Poder, Sabiduría y Valor."
+    },
+    {
+      "id": 6,
+      "name": "Arco y Flechas",
+      "image": "/images/objetos/Arco_de_Luz_ALBW.webp",
+      "function": "Arma a distancia para atacar enemigos y activar interruptores lejanos.",
+      "description": "Una herramienta básica pero indispensable para cualquier héroe."
+    },
+    {
+      "id": 7,
+      "name": "Bombas",
+      "image": "/images/objetos/BombbagTP.webp",
+      "function": "Explosivos utilizados para destruir grietas en las paredes y dañar enemigos protegidos.",
+      "description": "Reliquias explosivas que pueden ser compradas o encontradas en el mundo."
+    },
+    {
+      "id": 8,
+      "name": "Búmeran",
+      "image": "/images/objetos/Bumeran_Magico.webp",
+      "function": "Aturde a los enemigos y permite recoger objetos a distancia.",
+      "description": "Un proyectil que siempre regresa a la mano de su portador."
+    },
+    {
+      "id": 9,
+      "name": "Botas de Pegaso",
+      "image": "/images/objetos/Botas_de_Pegaso.webp",
+      "function": "Permiten a Link correr a gran velocidad y realizar embestidas.",
+      "description": "Calzado mágico que otorga la velocidad legendaria de Pegaso."
+    },
+    {
+      "id": 10,
+      "name": "Escudo de Espejo",
+      "image": "/images/objetos/Escudo_Espejo_TWW.webp",
+      "function": "Refleja haces de luz y proyectiles mágicos.",
+      "description": "Un escudo con una superficie tan pulida que puede desviar la magia más oscura."
+    },
+    {
+      "id": 11,
+      "name": "Batuta de los Vientos",
+      "image": "/images/objetos/Batuta_de_los_Vientos.webp",
+      "function": "Permite dirigir el viento y controlar elementos naturales a través de la música.",
+      "description": "Una batuta sagrada utilizada por los antiguos sacerdotes para comunicarse con los dioses."
+    },
+    {
+      "id": 12,
+      "name": "Piedra Sheikah",
+      "image": "/images/objetos/Sheikah_Stone_Skyward_Sword.webp",
+      "function": "Tableta multifuncional con habilidades como bombas remotas, magnetismo y teletransportación.",
+      "description": "Tecnología antigua avanzada creada por los Sheikah hace milenios."
+    },
+    {
+      "id": 13,
+      "name": "Paravela",
+      "image": "/images/objetos/Paravela_BotW.webp",
+      "function": "Permite a Link planear desde grandes alturas utilizando las corrientes de aire.",
+      "description": "Un regalo del Rey Rhoam indispensable para explorar el vasto Hyrule."
+    },
+    {
+      "id": 14,
+      "name": "Tableta de Pruna",
+      "image": "/images/objetos/tableta_pruna.png",
+      "function": "Evolución de la Piedra Sheikah con funciones mejoradas de cartografía y análisis.",
+      "description": "Desarrollada por la investigadora Pruna para asistir a Zelda y Link."
+    },
+    {
+      "id": 15,
+      "name": "Ultramano",
+      "image": "/images/objetos/Ultramano.webp",
+      "function": "Permite mover y adherir objetos para construir estructuras y vehículos complejos.",
+      "description": "Un poder ancestral imbuido en el brazo derecho de Link por Rauru."
+    },
+    {
+      "id": 16,
+      "name": "Lente de la Verdad",
+      "image": "/images/objetos/Lente_de_la_Verdad.webp",
+      "function": "Revela objetos invisibles, paredes falsas e ilusiones.",
+      "description": "Un artefacto Sheikah capaz de ver a través de las mentiras del mundo."
+    },
+    {
+      "id": 17,
+      "name": "Arpa de los Tiempos",
+      "image": "/images/objetos/Arpa_de_los_Tiempos.webp",
+      "function": "Permite viajar entre diferentes épocas en la tierra de Labrynna.",
+      "description": "Un instrumento musical sagrado con el poder de influir en el flujo temporal."
+    },
+    {
+      "id": 18,
+      "name": "Cetro de las Estaciones",
+      "image": "/images/objetos/Cetro_de_las_Estaciones.webp",
+      "function": "Cambia la estación del año para alterar el entorno y abrir nuevos caminos.",
+      "description": "Sostiene el poder de las cuatro estaciones de Holodrum."
+    },
+    {
+      "id": 19,
+      "name": "Pluma de Roc",
+      "image": "/images/objetos/Plumaderoc.webp",
+      "function": "Otorga a Link la habilidad de saltar, permitiendo saltar sobre fosos y obstáculos.",
+      "description": "Una pluma ligera que otorga la agilidad de un ave legendaria."
+    },
+    {
+      "id": 20,
+      "name": "Jarrón Gust",
+      "image": "/images/objetos/Jarron_Magico.webp",
+      "function": "Aspira aire, polvo y enemigos pequeños, y luego los expulsa con fuerza.",
+      "description": "Un jarrón mágico capaz de crear potentes corrientes de aire."
+    },
+    {
+      "id": 21,
+      "name": "Guantes de Topo",
+      "image": "/images/objetos/Guantes_de_Topo.webp",
+      "function": "Permiten excavar en suelos blandos y ciertos tipos de rocas.",
+      "description": "Herramientas de excavación que imitan las garras de un topo."
+    },
+    {
+      "id": 22,
+      "name": "Capa Mágica",
+      "image": "/images/objetos/il_fullxfull.4960521879_flot.avif",
+      "function": "Vuelve a Link invisible e intangible a cambio de consumo de magia.",
+      "description": "Una capa ligera que permite esconderse de los enemigos a plena vista."
+    },
+    {
+      "id": 23,
+      "name": "Cetra de Somaria",
+      "image": "/images/objetos/Vara_de_Somaria.webp",
+      "function": "Crea bloques mágicos que pueden usarse para presionar interruptores o como plataformas.",
+      "description": "Un báculo que materializa la energía mágica en forma sólida."
+    },
+    {
+      "id": 24,
+      "name": "Flechas de Luz",
+      "image": "/images/objetos/Flecha_de_Luz_Twilight_Princess.webp",
+      "function": "Proyectiles imbuidos de poder sagrado para purificar el mal y derrotar a Ganon.",
+      "description": "El arma definitiva contra la oscuridad, cargada con la luz de los sabios."
+    },
+    {
+      "id": 25,
+      "name": "Cetro de Fuego",
+      "image": "/images/objetos/ALBW_Cetro_de_Fuego.webp",
+      "function": "Lanza bolas de fuego que iluminan antorchas y queman enemigos.",
+      "description": "Un báculo que canaliza el calor elemental para ataques ardientes."
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "date": "15 Mar 2026",
+      "title": "Descubiertas Nuevas Ruinas Zonnan",
+      "summary": "Investigadores de Fuerte Vigía confirman el hallazgo de grabados inéditos en las profundidades de Akkala."
+    },
+    {
+      "id": 2,
+      "date": "10 Mar 2026",
+      "title": "Festival de la Rupia en Ciudad Goron",
+      "summary": "Los Goron celebran su evento anual con competiciones de minería y banquetes de roca de primera calidad."
+    },
+    {
+      "id": 3,
+      "date": "05 Mar 2026",
+      "title": "Rumores sobre el Dragón de Hielo",
+      "summary": "Varios viajeros reportan avistamientos de Naydra volando inusualmente bajo cerca del Monte Lanayru."
+    }
+  ]
+}

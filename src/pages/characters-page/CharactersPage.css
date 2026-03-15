@@ -1,0 +1,235 @@
+.characters-page {
+  padding: 40px 0;
+  perspective: 1000px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to bottom, var(--color-accent-gold), #b89c00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.page-header .subtitle {
+  font-family: var(--font-accent);
+  color: var(--color-parchment-dark);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.magic-search {
+  width: 100%;
+  max-width: 700px;
+  padding: 18px 35px;
+  background: rgba(27, 46, 26, 0.4);
+  backdrop-filter: blur(10px);
+  border: var(--border-ornate);
+  border-radius: 50px;
+  color: var(--color-parchment);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Search adjusted */
+.magic-search:focus {
+  outline: none;
+  box-shadow: var(--box-shadow-glow), 0 0 30px rgba(255, 204, 0, 0.2);
+  background: rgba(27, 46, 26, 0.6);
+  transform: scale(1.02);
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.character-card {
+  height: 750px; /* Monumental height for a true museum experience */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1b2e1a 0%, #0a110a 100%);
+  border: 1px solid var(--color-accent-gold);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+}
+
+/* Sheikah Electronics - Digital Corners */
+.character-card::before, .character-card::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--color-accent-gold);
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.4));
+  transition: all 0.4s ease;
+}
+
+.character-card::before {
+  top: 15px; left: 15px;
+  border-right: none; border-bottom: none;
+}
+
+.character-card::after {
+  bottom: 15px; right: 15px;
+  border-left: none; border-top: none;
+}
+
+.character-card:hover::before { transform: translate(-10px, -10px); border-color: #fff; }
+.character-card:hover::after { transform: translate(10px, 10px); border-color: #fff; }
+
+.character-card:hover {
+  transform: translateY(-10px);
+  border-color: #fff;
+  box-shadow: 0 0 30px var(--color-accent-gold-glow);
+}
+
+.card-image-wrapper {
+  position: relative;
+  height: 550px; /* Artwork now dominates the card space */
+  padding: 10px; /* Reduced padding to maximize image size */
+}
+
+.card-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px; /* Minimal padding for maximum visual impact */
+  z-index: 1;
+  position: relative;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.6));
+}
+
+.character-card:hover .card-image-wrapper img {
+  transform: scale(1.1) rotate(1deg);
+}
+
+.card-content {
+  padding: 30px;
+  background: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h2 {
+  font-size: 2.2rem;
+  color: var(--color-accent-gold);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-accent-gold-glow);
+  padding-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  font-size: 0.9rem;
+  font-family: var(--font-accent);
+  padding: 6px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.race-tag {
+  background-color: var(--color-primary);
+  color: var(--color-parchment);
+}
+
+.role-tag {
+  background-color: var(--color-accent-gold);
+  color: var(--color-primary-dark);
+}
+
+.description {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-parchment-dark); /* Improved contrast */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.abilities {
+  margin-bottom: 20px;
+  background: rgba(0,0,0,0.05);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.abilities h4 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.abilities ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.abilities li::before {
+  content: '✦';
+  color: var(--color-accent-gold);
+  margin-right: 8px;
+}
+
+.game-reference {
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 { font-size: 2.5rem; }
+  .characters-grid { gap: 20px; }
+  .card-image-wrapper { height: 340px; }
+}

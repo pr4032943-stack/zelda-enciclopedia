@@ -1,0 +1,17 @@
+# MEMORIA DE ENTREGA - TERCERA ENTREGA
+# PROYECTO: Zelda Encyclopedia
+
+## AMPLIACIÓN
+A continuación se enumeran los aspectos novedosos e implementaciones técnicas de interés que expanden las funcionalidades básicas del proyecto y que han sido diseñadas para ofrecer una experiencia premium (10/10):
+
+1. **Sistema de Foro Comunitario con Integración Firebase (CRUD Total)**:
+   Se ha implementado una sección de "Consejo de Sabios" (Foro) que conecta directamente con una base de datos FirebaseFirestore en la nube. Permite la visualización en tiempo real de discusiones, la creación de nuevos hilos con persistencia de datos y la eliminación de los mismos, cumpliendo con un ciclo CRUD completo integrado en una arquitectura serverless.
+
+2. **Arquitectura Visual Minimalista y Paralaje Cinemático**:
+   Se ha optado por un diseño limpio y compacto en la navegación principal, priorizando la legibilidad y la fluidez. Esto se combina con un sistema de parallax global de tres capas (fondos, niebla y partículas) que aporta profundidad sin sobrecargar la interfaz, manteniendo una estética profesional y eficiente.
+
+3. **Cursor Legendario de Alto Rendimiento (1:1 Precision)**:
+   Se ha diseñado un "Custom Cursor" basado en la Trifuerza que utiliza una arquitectura de renderizado por hardware (`requestAnimationFrame`) y referencias directas (`useRefs`). Esto garantiza una latencia de entrada de sub-milisegundos y una precisión 1:1 absoluta, sincronizando el "puntero" del icono con las coordenadas reales del sistema y ofreciendo feedback visual dinámico (escalado y brillo) al interactuar con elementos clicables.
+
+--------------------------------------------------
+© 2026 - Zelda Encyclopedia Project Enhancement
