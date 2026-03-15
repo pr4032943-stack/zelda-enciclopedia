@@ -1,22 +1,22 @@
-# MEMORIA DE ENTREGA - TERCERA ENTREGA
-# PROYECTO: Zelda Encyclopedia
+ MEMORIA DE ENTREGA - TERCERA ENTREGA
+ PROYECTO: Zelda Encyclopedia
 
-## AMPLIACIÓN
-A continuación se enumeran los aspectos novedosos e implementaciones técnicas de interés que expanden las funcionalidades básicas del proyecto y que han sido diseñadas para ofrecer una experiencia premium (10/10):
+AMPLIACIÓN
 
-1. **Sistema de Foro Comunitario con Integración Firebase (CRUD Total)**:
-   Se ha implementado una sección de "Consejo de Sabios" (Foro) que conecta directamente con una base de datos Firebase Firestore en la nube. Permite:
-   - **CREATE**: Creación de nuevas discusiones persistidas en Firestore con timestamp del servidor.
-   - **READ**: Lectura y visualización en tiempo real de los hilos, con búsqueda por texto y filtrado por categoría.
-   - **UPDATE**: Edición de título y categoría de discusiones existentes usando `updateDoc` de Firestore.
-   - **DELETE**: Eliminación definitiva de discusiones con confirmación de usuario usando `deleteDoc`.
-   Todo esto en una arquitectura serverless real, sin backend propio.
 
-2. **Arquitectura Visual Avanzada: Parallax Multicapa y Menú Móvil Tipo Drawer**:
+1. Sistema de Foro Comunitario 
+   Se ha implementado una sección de "Consejo de Sabios" 
+   - CREATE: Creación de nuevas discusiones persistidas en Firestore con timestamp del servidor.
+   - READ: Lectura y visualización en tiempo real de los hilos, con búsqueda por texto y filtrado por categoría.
+   - UPDATE: Edición de título y categoría de discusiones existentes usando `updateDoc` de Firestore.
+   - DELETE: Eliminación definitiva de discusiones con confirmación de usuario usando `deleteDoc`.
+   
+
+2.  Parallax 
    El diseño incluye un sistema de parallax de tres capas que aporta profundidad cinematográfica. Además, el Header cuenta con un menú hamburguesa responsive que despliega un panel lateral (drawer) animado en dispositivos móviles, ofreciendo una navegación de nivel nativo en cualquier pantalla.
 
-3. **Cursor Legendario de Alto Rendimiento (1:1 Precision)**:
-   Se ha diseñado un "Custom Cursor" basado en la Trifuerza que utiliza una arquitectura de renderizado por hardware (`requestAnimationFrame`) y referencias directas (`useRef`). Esto garantiza una latencia de sub-milisegundos y una precisión 1:1 absoluta, con feedback visual dinámico (escalado y brillo) al interactuar con elementos clicables.
+3. Cursor 
+   Se ha diseñado un "Custom Cursor" basado en la Trifuerza 
 
---------------------------------------------------
+
 © 2026 - Zelda Encyclopedia Project Enhancement
