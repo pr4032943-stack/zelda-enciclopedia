@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { db } from '../../services/firebase'
-import { collection, getDocs, addDoc, deleteDoc, doc, serverTimestamp } from 'firebase/firestore'
+import { collection, getDocs, addDoc, deleteDoc, updateDoc, doc, serverTimestamp } from 'firebase/firestore'
 import './CommunityForum.css'
 
 const CommunityForum = () => {
@@ -15,6 +15,9 @@ const CommunityForum = () => {
     const [newCategory, setNewCategory] = useState('Lore')
     const [newMessage, setNewMessage] = useState('')
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [editingId, setEditingId] = useState(null)
+    const [editTitle, setEditTitle] = useState('')
+    const [editCategory, setEditCategory] = useState('Lore')
 
     const categories = ['All', 'Lore', 'Speedrunning', 'Strategies', 'Fan Art', 'News', 'Cosplay/Fan Creations']
     const formCategories = ['Lore', 'Speedrunning', 'Strategies', 'Fan Art', 'News', 'Cosplay/Fan Creations']
@@ -235,6 +238,38 @@ const CommunityForum = () => {
         }
     }
 
+    const handleEditStart = (discussion) => {
+        if (discussion.id.startsWith('m')) {
+            alert("No se pueden editar las discusiones de prueba (Mock).")
+            return
+        }
+        setEditingId(discussion.id)
+        setEditTitle(discussion.title)
+        setEditCategory(discussion.category)
+    }
+
+    const handleUpdate = async (e) => {
+        e.preventDefault()
+        if (!editTitle) return
+        
+        setIsSubmitting(true)
+        try {
+            const docRef = doc(db, 'discussions', editingId)
+            await updateDoc(docRef, {
+                title: editTitle,
+                category: editCategory,
+                updatedAt: serverTimestamp()
+            })
+            setEditingId(null)
+            fetchDiscussions()
+        } catch (error) {
+            console.error("Error updating document: ", error)
+            alert("Could not update discussion.")
+        } finally {
+            setIsSubmitting(false)
+        }
+    }
+
     const filteredDiscussions = allDiscussions.filter(d =>
         d.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
         (categoryFilter === 'All' || d.category === categoryFilter)
@@ -265,6 +300,37 @@ const CommunityForum = () => {
                 </div>
 
                 <div className="forum-content">
+                    {editingId && (
+                        <div className="edit-discussion-form">
+                            <h3>Editar Sabiduría</h3>
+                            <form onSubmit={handleUpdate}>
+                                <input 
+                                    type="text" 
+                                    placeholder="Discussion Title" 
+                                    value={editTitle}
+                                    onChange={(e) => setEditTitle(e.target.value)}
+                                    required 
+                                />
+                                <select 
+                                    value={editCategory} 
+                                    onChange={(e) => setEditCategory(e.target.value)}
+                                >
+                                    {formCategories.map(cat => (
+                                        <option key={cat} value={cat}>{cat}</option>
+                                    ))}
+                                </select>
+                                <div className="edit-actions">
+                                    <button type="submit" disabled={isSubmitting} className="submit-btn">
+                                        {isSubmitting ? 'Actualizando...' : 'Guardar Cambios'}
+                                    </button>
+                                    <button type="button" onClick={() => setEditingId(null)} className="cancel-btn">
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    )}
+
                     <div className="new-discussion-form">
                         <h3>Start a New Discussion</h3>
                         <form onSubmit={handleAddDiscussion}>
@@ -341,7 +407,10 @@ const CommunityForum = () => {
                                                     💬 {disc.replies || 0}
                                                 </button>
                                             </div>
-                                            <button onClick={() => handleDelete(disc.id)} className="delete-btn-ghost">Eliminar</button>
+                                            <div className="admin-actions">
+                                                <button onClick={() => handleEditStart(disc)} className="edit-btn-ghost">Editar</button>
+                                                <button onClick={() => handleDelete(disc.id)} className="delete-btn-ghost">Eliminar</button>
+                                            </div>
                                         </div>
 
                                         <div className="featured-comments">

@@ -2,9 +2,9 @@ import './RSSPage.css'
 
 const RSSPage = () => {
     const rssFeeds = [
-        { title: 'Nintendo News', url: 'https://www.nintendo.com/feed', description: 'Official news from Nintendo' },
-        { title: 'Zelda Dungeon', url: 'https://www.zeldadungeon.net/feed', description: 'Detailed Zelda news and guides' },
-        { title: 'Zelda Universe', url: 'https://zeldauniverse.net/feed', description: 'Zelda community and fan projects' }
+        { title: 'Zelda Dungeon', url: 'https://www.zeldadungeon.net/', description: 'Detailed Zelda news and guides' },
+        { title: 'Zelda Universe', url: 'https://zeldauniverse.net/', description: 'Zelda community and fan projects' },
+        { title: 'Nintendo News', url: 'https://nintendonews.com/', description: 'Official news from Nintendo' }
     ]
 
     return (

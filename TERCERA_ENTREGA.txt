@@ -5,13 +5,18 @@
 A continuación se enumeran los aspectos novedosos e implementaciones técnicas de interés que expanden las funcionalidades básicas del proyecto y que han sido diseñadas para ofrecer una experiencia premium (10/10):
 
 1. **Sistema de Foro Comunitario con Integración Firebase (CRUD Total)**:
-   Se ha implementado una sección de "Consejo de Sabios" (Foro) que conecta directamente con una base de datos FirebaseFirestore en la nube. Permite la visualización en tiempo real de discusiones, la creación de nuevos hilos con persistencia de datos y la eliminación de los mismos, cumpliendo con un ciclo CRUD completo integrado en una arquitectura serverless.
+   Se ha implementado una sección de "Consejo de Sabios" (Foro) que conecta directamente con una base de datos Firebase Firestore en la nube. Permite:
+   - **CREATE**: Creación de nuevas discusiones persistidas en Firestore con timestamp del servidor.
+   - **READ**: Lectura y visualización en tiempo real de los hilos, con búsqueda por texto y filtrado por categoría.
+   - **UPDATE**: Edición de título y categoría de discusiones existentes usando `updateDoc` de Firestore.
+   - **DELETE**: Eliminación definitiva de discusiones con confirmación de usuario usando `deleteDoc`.
+   Todo esto en una arquitectura serverless real, sin backend propio.
 
-2. **Arquitectura Visual Minimalista y Paralaje Cinemático**:
-   Se ha optado por un diseño limpio y compacto en la navegación principal, priorizando la legibilidad y la fluidez. Esto se combina con un sistema de parallax global de tres capas (fondos, niebla y partículas) que aporta profundidad sin sobrecargar la interfaz, manteniendo una estética profesional y eficiente.
+2. **Arquitectura Visual Avanzada: Parallax Multicapa y Menú Móvil Tipo Drawer**:
+   El diseño incluye un sistema de parallax de tres capas que aporta profundidad cinematográfica. Además, el Header cuenta con un menú hamburguesa responsive que despliega un panel lateral (drawer) animado en dispositivos móviles, ofreciendo una navegación de nivel nativo en cualquier pantalla.
 
 3. **Cursor Legendario de Alto Rendimiento (1:1 Precision)**:
-   Se ha diseñado un "Custom Cursor" basado en la Trifuerza que utiliza una arquitectura de renderizado por hardware (`requestAnimationFrame`) y referencias directas (`useRefs`). Esto garantiza una latencia de entrada de sub-milisegundos y una precisión 1:1 absoluta, sincronizando el "puntero" del icono con las coordenadas reales del sistema y ofreciendo feedback visual dinámico (escalado y brillo) al interactuar con elementos clicables.
+   Se ha diseñado un "Custom Cursor" basado en la Trifuerza que utiliza una arquitectura de renderizado por hardware (`requestAnimationFrame`) y referencias directas (`useRef`). Esto garantiza una latencia de sub-milisegundos y una precisión 1:1 absoluta, con feedback visual dinámico (escalado y brillo) al interactuar con elementos clicables.
 
 --------------------------------------------------
 © 2026 - Zelda Encyclopedia Project Enhancement

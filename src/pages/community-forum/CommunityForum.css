@@ -265,6 +265,47 @@
     color: var(--color-accent-gold);
 }
 
+.edit-discussion-form {
+    background: rgba(255, 204, 0, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-accent-gold);
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.1);
+}
+
+.edit-discussion-form h3 {
+    color: var(--color-accent-gold);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.edit-discussion-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.cancel-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .delete-btn {
   background: #ff4444;
   color: white;
@@ -277,6 +318,35 @@
 
 .delete-btn:hover {
   background: #cc0000;
+}
+
+/* Edit/Delete Ghost buttons */
+.admin-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn-ghost, .delete-btn-ghost {
+    background: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #666;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn-ghost:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-primary-dark);
+    background: rgba(255, 204, 0, 0.1);
+}
+
+.delete-btn-ghost:hover {
+    border-color: #ff4444;
+    color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
 }
 
 .category-tag {
