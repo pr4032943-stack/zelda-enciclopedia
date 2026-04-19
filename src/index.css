@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&family=MedievalSharp&display=swap');
+
+:root {
+  /* Zelda Inspired Color Palette */
+  --color-primary-dark: #1b2e1a; /* Forest Green */
+  --color-primary: #2a4728;
+  --color-primary-light: #3d6639;
+  
+  --color-accent-gold: #ffcc00; /* Triforce Gold */
+  --color-accent-gold-glow: rgba(255, 204, 0, 0.4);
+  --color-accent-blue: #2c6fb0; /* Goddess Blue */
+  --color-accent-red: #8b0000;  /* Royal Red / Ganon */
+  
+  --color-parchment: #f4ecd8;
+  --color-parchment-dark: #e6d8b8;
+  --color-text-main: #e0e0e0;
+  --color-text-dark: #2c2c2c;
+  
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Lora', serif;
+  --font-accent: 'MedievalSharp', cursive;
+
+  --border-ornate: 2px solid var(--color-accent-gold);
+  --box-shadow-glow: 0 0 20px var(--color-accent-gold-glow);
+  --box-shadow-dark: 0 15px 45px rgba(0, 0, 0, 0.9);
+  --glass-bg: rgba(27, 46, 26, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --museum-bg: radial-gradient(circle at center, #1b2e1a, #0b140b);
+}
+
+.fantasy-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: var(--border-ornate);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow-dark);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.fantasy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 100%);
+  pointer-events: none;
+}
+
+.card-glare {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--x) var(--y), rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 5;
+    mix-blend-mode: overlay;
+    transition: opacity 0.3s ease;
+}
+
+.fantasy-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.9), var(--box-shadow-glow);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #0f170e; /* Very dark green almost black */
+  background-image: radial-gradient(circle at center, var(--color-primary-dark) 0%, #0f170e 100%);
+  background-attachment: fixed;
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-accent-gold);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1.5px;
+}
+
+a {
+  color: var(--color-accent-gold);
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px var(--color-accent-gold);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-gold);
+}

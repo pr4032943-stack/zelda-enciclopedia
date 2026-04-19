@@ -1,0 +1,22 @@
+ MEMORIA DE ENTREGA - TERCERA ENTREGA
+ PROYECTO: Zelda Encyclopedia
+
+AMPLIACIÓN
+
+
+1. Sistema de Foro Comunitario 
+   Se ha implementado una sección de "Consejo de Sabios" 
+   - CREATE: Creación de nuevas discusiones persistidas en Firestore con timestamp del servidor.
+   - READ: Lectura y visualización en tiempo real de los hilos, con búsqueda por texto y filtrado por categoría.
+   - UPDATE: Edición de título y categoría de discusiones existentes usando `updateDoc` de Firestore.
+   - DELETE: Eliminación definitiva de discusiones con confirmación de usuario usando `deleteDoc`.
+   
+
+2.  Parallax 
+   El diseño incluye un sistema de parallax de tres capas que aporta profundidad cinematográfica. Además, el Header cuenta con un menú hamburguesa responsive que despliega un panel lateral (drawer) animado en dispositivos móviles, ofreciendo una navegación de nivel nativo en cualquier pantalla.
+
+3. Cursor 
+   Se ha diseñado un "Custom Cursor" basado en la Trifuerza 
+
+
+© 2026 - Zelda Encyclopedia Project Enhancement

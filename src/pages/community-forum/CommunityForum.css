@@ -1,0 +1,400 @@
+.community-forum {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.featured-topics {
+  margin-bottom: 30px;
+  background: var(--color-primary-dark);
+  padding: 20px;
+  border-radius: 8px;
+  border: var(--border-ornate);
+  box-shadow: var(--box-shadow-glow);
+}
+
+.featured-topics h3 {
+  color: var(--color-accent-gold);
+  margin-bottom: 15px;
+  font-family: var(--font-heading);
+}
+
+.topics-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.topic-card {
+  background: var(--color-primary);
+  color: var(--color-parchment);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: var(--font-accent);
+  border: 1px solid var(--color-primary-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topic-card:hover {
+  background: var(--color-accent-gold);
+  color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.forum-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 15px 15px 55px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 204, 0, 0.2);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Category Count Hidden */
+.cat-count { display: none; }
+
+.forum-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.new-discussion-form {
+  background: var(--color-primary-dark);
+  padding: 2rem;
+  border-radius: 10px;
+  position: sticky;
+  top: 100px;
+  border: var(--border-ornate);
+  box-shadow: var(--box-shadow-dark);
+}
+
+.new-discussion-form h3 {
+  color: var(--color-accent-gold);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+}
+
+.new-discussion-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.new-discussion-form input,
+.new-discussion-form select,
+.new-discussion-form textarea {
+  padding: 0.8rem;
+  border: 1px solid var(--color-primary-light);
+  border-radius: 5px;
+  font-size: 1rem;
+  background: var(--color-primary);
+  color: var(--color-parchment);
+}
+
+.new-discussion-form input:focus,
+.new-discussion-form select:focus,
+.new-discussion-form textarea:focus {
+    outline: none;
+    border-color: var(--color-accent-gold);
+}
+
+.submit-btn {
+  background: var(--color-accent-gold);
+  color: var(--color-primary-dark);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-heading);
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #ffe066;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px var(--color-accent-gold-glow);
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.discussions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.discussion-card {
+  background: var(--color-parchment);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #c2b280;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discussion-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.discussion-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.discussion-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 0 15px var(--color-accent-gold-glow);
+  border-color: var(--color-accent-gold);
+}
+
+.discussion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.author-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primary-dark);
+  border: 2px solid var(--color-accent-gold);
+}
+
+.discussion-info h3 {
+  color: var(--color-primary-dark);
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-heading);
+}
+
+.discussion-info p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.author-name {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.discussion-body {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.message-summary {
+  font-style: italic;
+  color: #333;
+  line-height: 1.5;
+}
+
+.discussion-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.featured-comments {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.comment-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+.mini-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--color-accent-gold);
+}
+
+.comment-line strong {
+    color: var(--color-accent-gold);
+}
+
+.edit-discussion-form {
+    background: rgba(255, 204, 0, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-accent-gold);
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.1);
+}
+
+.edit-discussion-form h3 {
+    color: var(--color-accent-gold);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.edit-discussion-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.cancel-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+/* Edit/Delete Ghost buttons */
+.admin-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn-ghost, .delete-btn-ghost {
+    background: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #666;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn-ghost:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-primary-dark);
+    background: rgba(255, 204, 0, 0.1);
+}
+
+.delete-btn-ghost:hover {
+    border-color: #ff4444;
+    color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
+}
+
+.category-tag {
+  background: var(--color-primary-light);
+  color: var(--color-parchment);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: var(--font-accent);
+}
+
+/* Specific category colors */
+.category-tag.strategies { background-color: #e67e22; }
+.category-tag.lore { background-color: #9b59b6; }
+.category-tag.fan-art { background-color: #e74c3c; }
+.category-tag.speedrunning { background-color: #2ecc71; color: #000; }
+.category-tag.news { background-color: #3498db; }
+.category-tag.cosplay-fan-creations { background-color: #f1c40f; color: #000; }
+
+.loading, .no-results {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-accent-gold);
+  background: var(--color-primary-dark);
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .forum-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .new-discussion-form {
+    position: static;
+  }
+  
+  .discussion-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .discussion-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

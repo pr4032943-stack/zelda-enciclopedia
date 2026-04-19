@@ -1,0 +1,174 @@
+.games-page {
+  width: 100%;
+  padding: 40px 0 100px 0;
+  background-attachment: fixed;
+}
+
+.timeline-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 60px 20px;
+}
+
+/* Central Golden Path - The "Legendary Journey" */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    transparent, 
+    var(--color-accent-gold) 5%, 
+    var(--color-accent-gold) 95%, 
+    transparent
+  );
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 8px var(--color-accent-gold-glow));
+  z-index: 1;
+}
+
+.game-card-perspective {
+  width: 100%;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+/* Alternating Logic */
+.game-card-perspective:nth-child(odd) { justify-content: flex-start; }
+.game-card-perspective:nth-child(even) { justify-content: flex-end; }
+
+.game-card {
+  width: 450px;
+  width: calc(50% - 40px);
+  background: rgba(27, 46, 26, 0.4) !important;
+  backdrop-filter: blur(12px);
+  border: 2px solid var(--color-accent-gold);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Staggering */
+.game-card-perspective:nth-child(even) .game-card {
+  margin-left: auto;
+}
+
+.game-year-bg {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255, 204, 0, 0.05);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.game-card-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-image-col {
+  width: 100%;
+  height: 250px;
+  background: radial-gradient(circle at center, #1b2e1a, #050a05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 2px solid var(--color-accent-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.game-image-col img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(255, 204, 0, 0.3));
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+
+.game-info-col {
+  padding: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.game-year-tag {
+  color: var(--color-accent-gold);
+  font-family: var(--font-accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.game-info-col h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.game-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.game-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  font-family: var(--font-accent);
+}
+
+.platform-name {
+  color: var(--color-accent-gold);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score {
+  background: var(--color-accent-gold);
+  color: #000;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Timeline Node */
+.game-card-perspective::after {
+  content: '✦';
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-accent-gold);
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px var(--color-accent-gold-glow);
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .timeline-container::before { left: 40px; }
+  .game-card { width: calc(100% - 80px); margin-left: 80px !important; }
+  .game-card-perspective::after { left: 40px; }
+}
