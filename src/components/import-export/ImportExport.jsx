@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Papa from 'papaparse';
 import * as XLSX from 'xlsx';
-import { parseString, Builder } from 'xml2js';
+import xml2js from 'xml2js';
 import { db } from '../../services/firebase';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
 import './ImportExport.css';
@@ -27,7 +27,7 @@ const ImportExport = () => {
           const parsed = Papa.parse(content, { header: true });
           data = parsed.data;
         } else if (format === 'xml') {
-          parseString(content, (err, result) => {
+          xml2js.parseString(content, (err, result) => {
             if (err) throw err;
             data = result.root.item || result.root[importType] || [];
           });
@@ -71,7 +71,7 @@ const ImportExport = () => {
         mimeType = 'text/csv';
         extension = 'csv';
       } else if (format === 'xml') {
-        const builder = new Builder();
+        const builder = new xml2js.Builder();
         const xmlObj = { root: { [exportType]: data } };
         content = builder.buildObject(xmlObj);
         mimeType = 'application/xml';
