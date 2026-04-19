@@ -179,7 +179,7 @@ const ImportExport = () => {
 
   return (
     <div className="import-export">
-      <h2>📥📤 Import/Export Data Manager</h2>
+      <h2>Import/Export Data Manager</h2>
       
       {/* Download Section */}
       <div className="section download-section">
