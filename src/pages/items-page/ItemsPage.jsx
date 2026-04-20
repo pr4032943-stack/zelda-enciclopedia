@@ -2,11 +2,6 @@
 import { useState, useEffect } from 'react'
 import data from '../../assets/data.json'
 import InfoModal from '../../components/InfoModal/InfoModal'
-=======
-import { useState } from 'react'
-import data from '../../assets/data.json'
-import InfoModal from '../../components/info-modal/InfoModal'
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 import useTilt from '../../hooks/useTilt'
 import './ItemsPage.css'
 

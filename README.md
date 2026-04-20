@@ -36,11 +36,17 @@ The following resources were instrumental in the development of this project:
 
  RSS Ecosystem
 Our application includes a dedicated RSS Information Page that helps users subscribe to critical Hyrule news. 
+![RSS Feed Reader Screenshot](screenshot-rss.png)
 
   Deployment & Github
 *   GitHub Repository: https://github.com/pr4032943-stack/zelda-enciclopedia.git
 *   Branches: This project maintains dedicated `main` (production) and `develop` (feature implementation) branches for robust version control.
 
+
+Import/Export Example Files:
+- [datos.json](public/examples/datos.json)
+- [datos.csv](public/examples/datos.csv)
+- [datos.xml](public/examples/datos.xml)
 
 
 © 2026 Zelda Encyclopedia. All Rights Reserved. 

@@ -10,17 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "firebase": "^12.10.0",
-=======
     "firebase": "^12.12.0",
->>>>>>> ca7a0c4 (Añado .env al gitignore)
     "leaflet": "^1.9.4",
+    "papaparse": "^5.4.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-leaflet": "^5.0.0",
-    "react-router-dom": "^7.13.0"
+    "react-router-dom": "^7.13.0",
+    "xlsx": "^0.18.5",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
