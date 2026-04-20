@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
-import HomeHero from '../../components/home/HomeHero'
-import HomeNewsSection from '../../components/home/HomeNewsSection'
+import { Link } from 'react-router-dom'
+
 import HomeParallax from '../../components/home/HomeParallax'
-import HomeRealmGrid from '../../components/home/HomeRealmGrid'
 import data from '../../assets/data.json'
-import ImportExport from '../../components/import-export/ImportExport'
 
 import './HomePage.css'
 
@@ -23,16 +21,21 @@ const HomePage = () => {
       <HomeParallax scrollY={scrollY} />
 
       <div className="container relative-content">
+
         <section className="hero-banner">
           <div className="hero-content">
             <div className="triforce-crest-mini"></div>
             <h1>The Legend of Zelda</h1>
             <p className="hero-subtitle">Bienvenido a Hyrule</p>
-            <Link to="/games" className="cta-button">Comenzar Aventura</Link>
+
+            <Link to="/games" className="cta-button">
+              Comenzar Aventura
+            </Link>
           </div>
         </section>
 
         <section className="realm-sections">
+
           <Link to="/characters" className="realm-card characters-realm">
             <div className="realm-overlay"></div>
             <h3>Personajes</h3>
@@ -56,6 +59,7 @@ const HomePage = () => {
             <h3>Consejo de Sabios</h3>
             <p>Únete al debate y comparte teorías.</p>
           </Link>
+
         </section>
 
         <section className="featured-news">
@@ -63,17 +67,22 @@ const HomePage = () => {
             <h2>Últimas Noticias de Hyrule</h2>
             <div className="title-underline"></div>
           </div>
+
           <div className="news-grid">
             {data.news?.slice(0, 3).map((item) => (
               <div key={item.id} className="news-card">
                 <div className="news-date">{item.date}</div>
                 <h3>{item.title}</h3>
                 <p>{item.summary}</p>
-                <Link to="/rss-info" className="news-link">Leer más →</Link>
+
+                <Link to="/rss-info" className="news-link">
+                  Leer más →
+                </Link>
               </div>
             ))}
           </div>
         </section>
+
       </div>
     </div>
   )
