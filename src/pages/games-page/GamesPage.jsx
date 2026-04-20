@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import data from '../../assets/data.json'
-import InfoModal from '../../components/InfoModal/InfoModal'
+import InfoModal from '../../components/info-modal/InfoModal'
 import useTilt from '../../hooks/useTilt'
 import './GamesPage.css'
 

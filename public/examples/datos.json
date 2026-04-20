@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Link",
+    "image": "/images/personajes/TotK_-_Link_imagen_oficial.webp",
+    "race": "Hylian",
+    "game": "Todos los juegos principales",
+    "role": "El Héroe Elegido",
+    "abilities": [
+      "Esgrima maestra",
+      "Tiro con arco",
+      "Uso de magia",
+      "Equitación"
+    ],
+    "description": "El eterno héroe de Hyrule. Destinado a portar la Trifuerza del Valor y la Espada Maestra para derrotar al mal."
+  },
+  {
+    "id": 2,
+    "name": "Zelda",
+    "image": "/images/personajes/Zelda_BotW_Artwork.png",
+    "race": "Hylian",
+    "game": "Varios juegos",
+    "role": "Princesa de Hyrule",
+    "abilities": [
+      "Magia ancestral",
+      "Sabiduría divina",
+      "Control del tiempo"
+    ],
+    "description": "La princesa de Hyrule, guardiana de la Trifuerza de la Sabiduría y aliada eterna de Link."
+  }
+]

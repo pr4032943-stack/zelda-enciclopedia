@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import data from '../../assets/data.json'
+import ImportExport from '../../components/import-export/ImportExport'
+
 import './HomePage.css'
 
 const HomePage = () => {
@@ -67,6 +69,7 @@ const HomePage = () => {
           </Link>
         </section>
 
+        <ImportExport />
         <section className="featured-news">
           <div className="section-title">
             <h2>Últimas Noticias de Hyrule</h2>
