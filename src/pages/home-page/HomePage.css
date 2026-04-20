@@ -333,3 +333,53 @@
   opacity: 0.8;
   text-decoration: underline;
 }
+<<<<<<< HEAD
+=======
+
+.rss-highlight {
+  margin-top: 32px;
+  padding: 28px 32px;
+  border: 1px solid rgba(255, 204, 0, 0.25);
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 204, 0, 0.08), rgba(44, 111, 176, 0.1)),
+    rgba(8, 12, 8, 0.5);
+}
+
+.rss-highlight-kicker {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-accent-gold);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.rss-highlight h3 {
+  margin-bottom: 12px;
+}
+
+.rss-highlight p {
+  color: var(--color-text-main);
+  max-width: 760px;
+}
+
+.rss-highlight-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .rss-highlight {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rss-highlight-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+>>>>>>> ca7a0c4 (Añado .env al gitignore)

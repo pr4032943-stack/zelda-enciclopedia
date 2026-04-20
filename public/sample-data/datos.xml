@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entries>
+  <entry>
+    <title>Link</title>
+    <type>personaje</type>
+    <era>Todos los juegos principales</era>
+    <source>sample-data</source>
+    <description>Heroe principal de la saga Zelda.</description>
+    <image>/images/personajes/TotK_-_Link_imagen_oficial.webp</image>
+  </entry>
+  <entry>
+    <title>Tears of the Kingdom</title>
+    <type>juego</type>
+    <era>2023 - Switch</era>
+    <source>sample-data</source>
+    <description>Secuela de Breath of the Wild con cielo y subsuelo explorables.</description>
+    <image>/images/juegos/Tears of the Kingdom.jpg</image>
+  </entry>
+  <entry>
+    <title>Espada Maestra</title>
+    <type>objeto</type>
+    <era>Arma legendaria</era>
+    <source>sample-data</source>
+    <description>Hoja sagrada vinculada al heroe elegido.</description>
+    <image>/images/objetos/Artwork_Espada_Maestra_TPHD.webp</image>
+  </entry>
+</entries>

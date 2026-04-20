@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+=======
+import { useEffect, useState } from 'react'
+import HomeHero from '../../components/home/HomeHero'
+import HomeNewsSection from '../../components/home/HomeNewsSection'
+import HomeParallax from '../../components/home/HomeParallax'
+import HomeRealmGrid from '../../components/home/HomeRealmGrid'
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
 import data from '../../assets/data.json'
 import './HomePage.css'
 
@@ -8,12 +16,17 @@ const HomePage = () => {
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <div className="home-page">
+<<<<<<< HEAD
       {/* Global Cinematic Parallax */}
       <div className="global-parallax-system">
         <div 
@@ -84,6 +97,14 @@ const HomePage = () => {
             ))}
           </div>
         </section>
+=======
+      <HomeParallax scrollY={scrollY} />
+
+      <div className="container relative-content">
+        <HomeHero />
+        <HomeRealmGrid />
+        <HomeNewsSection news={data.news?.slice(0, 3) || []} />
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
       </div>
     </div>
   )

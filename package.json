@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "firebase": "^12.10.0",
+=======
+    "firebase": "^12.12.0",
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
     "leaflet": "^1.9.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

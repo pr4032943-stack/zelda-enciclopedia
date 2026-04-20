@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <table border="1">
+      <tr><th>title</th><th>type</th><th>era</th><th>source</th><th>description</th><th>image</th></tr>
+      <tr><td>Link</td><td>personaje</td><td>Todos los juegos principales</td><td>sample-data</td><td>Heroe principal de la saga Zelda.</td><td>/images/personajes/TotK_-_Link_imagen_oficial.webp</td></tr>
+      <tr><td>Tears of the Kingdom</td><td>juego</td><td>2023 - Switch</td><td>sample-data</td><td>Secuela de Breath of the Wild con cielo y subsuelo explorables.</td><td>/images/juegos/Tears of the Kingdom.jpg</td></tr>
+      <tr><td>Espada Maestra</td><td>objeto</td><td>Arma legendaria</td><td>sample-data</td><td>Hoja sagrada vinculada al heroe elegido.</td><td>/images/objetos/Artwork_Espada_Maestra_TPHD.webp</td></tr>
+    </table>
+  </body>
+</html>

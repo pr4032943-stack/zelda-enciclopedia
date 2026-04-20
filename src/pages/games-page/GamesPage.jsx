@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import { useState, useEffect } from 'react'
 import data from '../../assets/data.json'
 import InfoModal from '../../components/InfoModal/InfoModal'
+=======
+import { useState } from 'react'
+import data from '../../assets/data.json'
+import InfoModal from '../../components/info-modal/InfoModal'
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
 import useTilt from '../../hooks/useTilt'
 import './GamesPage.css'
 
@@ -49,6 +55,7 @@ const GameCard = ({ game, onClick }) => {
 };
 
 const GamesPage = () => {
+<<<<<<< HEAD
   const [games, setGames] = useState([])
   const [selectedGame, setSelectedGame] = useState(null)
 
@@ -57,6 +64,11 @@ const GamesPage = () => {
     setGames(sortedGames)
   }, [])
 
+=======
+  const [games] = useState([...data.games].sort((a, b) => a.year - b.year))
+  const [selectedGame, setSelectedGame] = useState(null)
+
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
   return (
     <div className="games-page">
       <div className="container">

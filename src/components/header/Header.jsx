@@ -66,6 +66,24 @@ const Header = () => {
                   Foro
                 </Link>
               </li>
+<<<<<<< HEAD
+=======
+              <li className="nav-item">
+                <Link to="/rss-info" className={`nav-link ${isActive('/rss-info')}`} onClick={closeMenu}>
+                  RSS
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/import-export" className={`nav-link ${isActive('/import-export')}`} onClick={closeMenu}>
+                  Import / Export
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className={`nav-link ${isActive('/contact')}`} onClick={closeMenu}>
+                  Contacto
+                </Link>
+              </li>
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
             </ul>
           </nav>
         </div>

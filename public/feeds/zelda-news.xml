@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Zelda Encyclopedia News</title>
+    <link>http://localhost:5173/rss-info</link>
+    <description>Noticias del proyecto Zelda Encyclopedia en formato RSS.</description>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Descubiertas nuevas ruinas zonnan</title>
+      <link>http://localhost:5173/rss-info#news-1</link>
+      <guid>http://localhost:5173/rss-info#news-1</guid>
+      <pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
+      <description>Investigadores de Fuerte Vigia confirman el hallazgo de grabados ineditos en Akkala.</description>
+    </item>
+
+    <item>
+      <title>Festival de la rupia en Ciudad Goron</title>
+      <link>http://localhost:5173/rss-info#news-2</link>
+      <guid>http://localhost:5173/rss-info#news-2</guid>
+      <pubDate>Tue, 10 Mar 2026 12:00:00 GMT</pubDate>
+      <description>Los Goron celebran su evento anual con competiciones de mineria y banquetes.</description>
+    </item>
+
+    <item>
+      <title>Rumores sobre el dragon de hielo</title>
+      <link>http://localhost:5173/rss-info#news-3</link>
+      <guid>http://localhost:5173/rss-info#news-3</guid>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 GMT</pubDate>
+      <description>Varios viajeros reportan avistamientos de Naydra cerca del Monte Lanayru.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useState, useEffect } from 'react'
+=======
+import { useState } from 'react'
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
 import data from '../../assets/data.json'
 import InfoModal from '../../components/info-modal/InfoModal'
 import useTilt from '../../hooks/useTilt'
@@ -44,6 +48,7 @@ const CharacterCard = ({ character, onClick }) => {
 }
 
 const CharactersPage = () => {
+<<<<<<< HEAD
   const [characters, setCharacters] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedChar, setSelectedChar] = useState(null)
@@ -52,6 +57,12 @@ const CharactersPage = () => {
     setCharacters(data.characters)
   }, [])
 
+=======
+  const [characters] = useState(data.characters)
+  const [searchTerm, setSearchTerm] = useState('')
+  const [selectedChar, setSelectedChar] = useState(null)
+
+>>>>>>> ca7a0c4 (Añado .env al gitignore)
   const filteredCharacters = characters.filter(char =>
     char.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     char.race.toLowerCase().includes(searchTerm.toLowerCase()) ||
