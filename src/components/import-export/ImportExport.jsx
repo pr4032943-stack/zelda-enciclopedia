@@ -12,7 +12,6 @@ const ImportExport = () => {
   const [exportType, setExportType] = useState('characters');
   const [exportFormat, setExportFormat] = useState('json');
   const [isLoading, setIsLoading] = useState(false);
-
   const convertDataToFormat = (data, format, typeName) => {
     let content;
     let mimeType;
