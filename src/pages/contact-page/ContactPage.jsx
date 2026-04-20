@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
@@ -6,7 +6,7 @@ import './ContactPage.css'
 import markerIcon from 'leaflet/dist/images/marker-icon.png'
 import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 
-let DefaultIcon = L.icon({
+const DefaultIcon = L.icon({
   iconUrl: markerIcon,
   shadowUrl: markerShadow,
   iconSize: [25, 41],
@@ -15,10 +15,10 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon
 
-
 const granCanariaPosition = [28.1235, -15.4363]
 const githubUrl = 'https://github.com/pr4032943-stack/zelda-enciclopedia'
 const contactEmail = 'contacto@hyrule-archive.es'
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -26,8 +26,6 @@ const ContactPage = () => {
     message: ''
   })
 
-  // Hyrule Castle approximate coordinates for thematic map
-  const position = [37.7749, -122.4194] // Default to somewhere, but let's pretend it's Hyrule
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({
@@ -38,117 +36,110 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Thank you for your message!')
-
     alert('Mensaje enviado. Gracias por contactar con Zelda Encyclopedia.')
     setFormData({ name: '', email: '', message: '' })
   }
 
   return (
-    <>
-      <div className="contact-page">
-        <div className="container">
-          <h1>Contact Us</h1>
-          <p className="subtitle">Get in touch with our team</p>
+    <div className="contact-page">
+      <div className="container">
+        <h1>Contacto</h1>
+        <p className="subtitle">Escríbenos o localiza el proyecto en Gran Canaria.</p>
 
-          <div className="contact-content">
-            <div className="contact-form-section">
-              <h2>Send a Message</h2>
-              <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
+        <div className="contact-content">
+          <div className="contact-form-section">
+            <h2>Envía un mensaje</h2>
+            <form onSubmit={handleSubmit} className="contact-form">
+              <div className="form-group">
+                <label htmlFor="name">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="form-input"
+                  placeholder="Tu nombre"
+                />
+              </div>
 
-                  <h1>Contacto</h1>
-                  <p className="subtitle">Escribenos o localiza el proyecto en Gran Canaria.</p>
+              <div className="form-group">
+                <label htmlFor="email">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="form-input"
+                  placeholder="tu@correo.com"
+                />
+              </div>
 
-                  <div className="contact-content">
-                    <div className="contact-form-section">
-                      <h2>Envia un mensaje</h2>
-                      <form onSubmit={handleSubmit} className="contact-form">
-                        <div className="form-group">
-                          <label htmlFor="name">Nombre</label>
-                          <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                            className="form-input"
-                          />
-                        </div>
+              <div className="form-group">
+                <label htmlFor="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows="5"
+                  className="form-textarea"
+                  placeholder="Tu mensaje aquí..."
+                />
+              </div>
 
-                        <div className="form-group">
+              <button type="submit" className="submit-button">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
 
-                          <label htmlFor="email">Correo</label>
-                          <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                            className="form-input"
-                          />
-                        </div>
+          <div className="contact-info-section">
+            <h2>Ubicación en Gran Canaria</h2>
 
-                        <div className="form-group">
+            <div className="map-wrapper">
+              <MapContainer
+                center={granCanariaPosition}
+                zoom={10}
+                scrollWheelZoom={false}
+                style={{ height: '300px', width: '100%', borderRadius: '10px' }}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={granCanariaPosition}>
+                  <Popup>
+                    Zelda Encyclopedia Headquarters <br /> Gran Canaria, España 🗺️
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </div>
 
-                          <label htmlFor="message">Mensaje</label>
-                          <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                            rows="5"
-                            className="form-textarea"
-                          />
-                        </div>
-
-                        <button type="submit" className="submit-button">
-
-                        </button>
-                      </form>
-                    </div>
-
-                    <div className="contact-info-section">
-
-                      <h2>Our Location</h2>
-
-                      <div className="map-wrapper">
-                        <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: '300px', width: '100%', borderRadius: '10px' }}>
-
-                          <TileLayer
-                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                          />
-                          <Marker position={position}>
-                            <Popup>
-                              Hyrule Castle HQ <br /> Rebuilding the Future.
-
-                            </Popup>
-                          </Marker>
-                        </MapContainer>
-                      </div>
-
-                      <div className="contact-details">
-
-                        <h3>Contact Information</h3>
-                        <p>Email: contact@zeldaproject.com</p>
-                        <p>GitHub: github.com/zeldaproject</p>
-                        <p>This is a fan project for educational purposes.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+            <div className="contact-details">
+              <h3>Información de contacto</h3>
+              <p>
+                <strong>Email:</strong>{' '}
+                <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+              </p>
+              <p>
+                <strong>GitHub:</strong>{' '}
+                <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                  Ver repositorio
+                </a>
+              </p>
+              <p className="note">
+                Este es un proyecto fan educativo dedicado a la saga The Legend of Zelda.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

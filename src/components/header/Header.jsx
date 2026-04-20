@@ -83,7 +83,6 @@ const Header = () => {
                   Contacto
                 </Link>
               </li>
-)
             </ul>
           </nav>
         </div>

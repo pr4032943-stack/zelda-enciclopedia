@@ -7,12 +7,12 @@
   font-size: 3rem;
   margin-bottom: 0.5rem;
   text-align: center;
+  color: var(--color-parchment);
 }
 
 .subtitle {
   text-align: center;
   margin-bottom: 3rem;
-  font-family: var(--font-accent);
   color: var(--color-parchment-dark);
   font-size: 1.2rem;
 }
@@ -21,60 +21,58 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-form-section,
+.contact-info-section {
+  background: rgba(8, 12, 8, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 204, 0, 0.2);
 }
 
 .contact-form-section h2,
 .contact-info-section h2 {
   color: var(--color-accent-gold);
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255,204,0,0.3);
+  border-bottom: 2px solid var(--color-accent-gold);
   padding-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .contact-form {
-  background: var(--color-primary);
-  padding: 2rem;
-  border-radius: 8px;
-  border: var(--border-ornate);
-  box-shadow: var(--box-shadow-dark);
-  position: relative;
-}
-
-.contact-form::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
-  opacity: 0.2;
-  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
-  position: relative;
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
   color: var(--color-parchment);
-  font-family: var(--font-accent);
-  letter-spacing: 1px;
+  font-size: 1rem;
 }
 
 .form-input,
 .form-textarea {
   width: 100%;
   padding: 12px 15px;
-  background-color: var(--color-primary-dark);
-  border: 1px solid var(--color-primary-light);
-  border-radius: 4px;
-  color: var(--color-text-main);
+  background-color: rgba(27, 46, 26, 0.6);
+  border: 2px solid rgba(255, 204, 0, 0.3);
+  border-radius: 6px;
+  color: var(--color-parchment);
   font-size: 1rem;
-  font-family: var(--font-body);
+  font-family: inherit;
   transition: all 0.3s ease;
 }
 
@@ -82,7 +80,8 @@
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-accent-gold);
-  box-shadow: 0 0 10px var(--color-accent-gold-glow);
+  background-color: rgba(27, 46, 26, 0.8);
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.3);
 }
 
 .submit-button {
@@ -90,55 +89,68 @@
   color: var(--color-primary-dark);
   padding: 15px 30px;
   border: none;
-  border-radius: 4px;
-  font-size: 1.2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
   font-weight: bold;
-  font-family: var(--font-heading);
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
-  position: relative;
-  z-index: 2;
 }
 
 .submit-button:hover {
-  background: #ffe066;
+  background: rgba(255, 204, 0, 0.8);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px var(--color-accent-gold-glow);
+  box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);
+}
+
+.map-wrapper {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
 }
 
 .contact-details {
-  margin-top: 1rem;
-  padding: 2rem;
-  background: var(--color-primary);
-  border: var(--border-ornate);
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(27, 46, 26, 0.3);
+  border: 2px solid var(--color-accent-gold);
   border-radius: 8px;
-  box-shadow: var(--box-shadow-dark);
-  position: relative;
-}
-
-.contact-details::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
-  opacity: 0.2;
-  pointer-events: none;
 }
 
 .contact-details h3 {
   color: var(--color-accent-gold);
   margin-bottom: 1rem;
-  position: relative;
-  z-index: 2;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .contact-details p {
   color: var(--color-parchment);
   margin-bottom: 0.8rem;
-  position: relative;
-  z-index: 2;
-  font-family: var(--font-accent);
+  line-height: 1.6;
+}
+
+.contact-details a {
+  color: var(--color-accent-gold);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.contact-details a:hover {
+  color: rgba(255, 204, 0, 0.8);
+  text-decoration: underline;
+}
+
+.note {
+  color: var(--color-parchment-dark);
+  font-style: italic;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 204, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -149,9 +161,45 @@
 }
 
 @media (max-width: 768px) {
+  .contact-page {
+    padding: 20px 0;
+  }
+
+  .contact-page h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
+
+  .contact-form-section,
+  .contact-info-section {
+    padding: 1.5rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 10px 12px;
+  }
+
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .map-wrapper {
+    height: 250px;
+  }
+}
   
   .contact-form,
   .contact-details {
