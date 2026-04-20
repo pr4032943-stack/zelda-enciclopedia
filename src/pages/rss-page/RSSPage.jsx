@@ -109,4 +109,4 @@ const RSSPage = () => {
   )
 }
 
-export default RSSPage
+export default RSSPage;
