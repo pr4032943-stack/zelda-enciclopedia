@@ -7,18 +7,15 @@ import CharactersPage from './pages/characters-page/CharactersPage'
 import ItemsPage from './pages/items-page/ItemsPage'
 import ContactPage from './pages/contact-page/ContactPage'
 import CommunityForum from './pages/community-forum/CommunityForum'
-<<<<<<< HEAD
-=======
 import ImportExportPage from './pages/import-export-page/ImportExportPage'
 import LegalPage from './pages/legal-page/LegalPage'
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 import RSSPage from './pages/rss-page/RSSPage'
 import MagicalBackground from './components/magical-background/MagicalBackground'
 import CustomCursor from './components/custom-cursor/CustomCursor'
 import './App.css'
 
-<<<<<<< HEAD
-=======
+
+
 const privacySections = [
   {
     heading: 'Datos basicos',
@@ -64,7 +61,7 @@ const termsSections = [
   },
 ]
 
->>>>>>> ca7a0c4 (Añado .env al gitignore)
+
 function App() {
   return (
     <Router>
@@ -80,9 +77,7 @@ function App() {
             <Route path="/games" element={<GamesPage />} />
             <Route path="/characters" element={<CharactersPage />} />
             <Route path="/items" element={<ItemsPage />} />
-<<<<<<< HEAD
             <Route path="/rss-info" element={<RSSPage />} />
-=======
             <Route path="/import-export" element={<ImportExportPage />} />
             <Route path="/rss-info" element={<RSSPage />} />
             <Route
@@ -115,7 +110,6 @@ function App() {
                 />
               }
             />
->>>>>>> ca7a0c4 (Añado .env al gitignore)
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
