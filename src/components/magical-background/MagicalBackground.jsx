@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useRef } from 'react';
 import './MagicalBackground.css';
 
@@ -76,7 +75,6 @@ const MagicalBackground = () => {
 };
 
 export default MagicalBackground;
-=======
 import { useEffect, useRef } from 'react'
 import './MagicalBackground.css'
 
@@ -149,4 +147,3 @@ const MagicalBackground = () => {
 }
 
 export default MagicalBackground
->>>>>>> ca7a0c4 (Añado .env al gitignore)
