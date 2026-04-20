@@ -64,7 +64,6 @@ const HomePage = () => {
             <div className="title-underline"></div>
           </div>
           <div className="news-grid">
-            {/* Displaying first 3 news items from JSON to fulfill requirement */}
             {data.news?.slice(0, 3).map((item) => (
               <div key={item.id} className="news-card">
                 <div className="news-date">{item.date}</div>

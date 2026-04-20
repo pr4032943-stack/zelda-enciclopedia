@@ -11,7 +11,6 @@
   padding: 60px 20px;
 }
 
-/* Central Golden Path - The "Legendary Journey" */
 .timeline-container::before {
   content: '';
   position: absolute;
@@ -38,7 +37,6 @@
   display: flex;
 }
 
-/* Alternating Logic */
 .game-card-perspective:nth-child(odd) { justify-content: flex-start; }
 .game-card-perspective:nth-child(even) { justify-content: flex-end; }
 
@@ -54,7 +52,6 @@
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* Staggering */
 .game-card-perspective:nth-child(even) .game-card {
   margin-left: auto;
 }
@@ -154,7 +151,6 @@
   font-size: 0.9rem;
 }
 
-/* Timeline Node */
 .game-card-perspective::after {
   content: '✦';
   position: absolute;

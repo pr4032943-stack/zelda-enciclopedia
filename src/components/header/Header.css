@@ -114,26 +114,16 @@
 .nav-list {
   display: flex;
   list-style: none;
-<<<<<<< HEAD
+
   gap: 1rem;
-=======
-  gap: 0.45rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 }
 
 .nav-link {
   font-family: var(--font-accent);
   color: var(--color-parchment);
   text-decoration: none;
-<<<<<<< HEAD
   font-size: 1.1rem;
   padding: 0.6rem 1.2rem;
-=======
-  font-size: 1rem;
-  padding: 0.55rem 0.9rem;
->>>>>>> ca7a0c4 (Añado .env al gitignore)
   border-radius: 30px;
   transition: all 0.4s ease;
   letter-spacing: 1px;

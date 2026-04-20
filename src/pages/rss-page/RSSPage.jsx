@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './RSSPage.css'
 
 const RSSPage = () => {
@@ -45,75 +44,6 @@ const RSSPage = () => {
             </div>
         </div>
     )
-=======
-import data from '../../assets/data.json'
-import './RSSPage.css'
-
-const RSSPage = () => {
-  const feedUrl = '/feeds/zelda-news.xml'
-
-  return (
-    <div className="rss-page">
-      <div className="container">
-        <header className="rss-hero">
-          <p className="rss-kicker">RSS 2.0</p>
-          <h1>Feed RSS de Zelda Encyclopedia</h1>
-          <p className="subtitle">
-            Esta pagina incluye un RSS real en formato XML para que puedas abrirlo en un lector de
-            feeds o directamente en el navegador.
-          </p>
-
-          <div className="rss-actions">
-            <a href={feedUrl} className="rss-link" target="_blank" rel="noreferrer">
-              Abrir archivo RSS XML
-            </a>
-            <a
-              href="https://www.feedly.com/i/welcome"
-              className="rss-link secondary-rss-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Probarlo en un lector RSS
-            </a>
-          </div>
-        </header>
-
-        <section className="rss-intro">
-          <h2>Que contiene el feed</h2>
-          <p>
-            El fichero publica las noticias destacadas del proyecto. Cada item del RSS tiene titulo,
-            descripcion, fecha y enlace asociado a esta aplicacion.
-          </p>
-          <code className="rss-code">{feedUrl}</code>
-        </section>
-
-        <section className="feeds-grid">
-          {data.news.map((item) => (
-            <article key={item.id} id={`news-${item.id}`} className="feed-card">
-              <p className="feed-date">{item.date}</p>
-              <h3>{item.title}</h3>
-              <p>{item.summary}</p>
-              <a href={feedUrl} className="rss-link" target="_blank" rel="noreferrer">
-                Ver item en el RSS
-              </a>
-            </article>
-          ))}
-        </section>
-
-        <section className="how-to-use">
-          <h2>Como usarlo</h2>
-          <p>
-            1. Copia la URL del feed XML.
-            <br />
-            2. Pegala en un lector como Feedly.
-            <br />
-            3. Recibiras las novedades del proyecto en formato RSS real.
-          </p>
-        </section>
-      </div>
-    </div>
-  )
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 }
 
 export default RSSPage

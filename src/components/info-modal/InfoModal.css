@@ -5,10 +5,10 @@
     backdrop-filter: blur(12px);
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Anchor to top */
-    z-index: 2000; /* Higher priority */
-    padding: 60px 20px; /* Always starts at 60px from top */
-    overflow-y: auto; /* Scroll the overlay, not the content */
+    align-items: flex-start; 
+    z-index: 2000; 
+    padding: 60px 20px; 
+    overflow-y: auto; 
 }
 
 .modal-bg-pattern {
@@ -99,7 +99,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
-    height: 700px; /* Maximize visibility in the legendary card view */
+    height: 700px; 
     overflow: hidden;
     position: relative;
     box-shadow: inset 0 0 30px rgba(0,0,0,0.5);

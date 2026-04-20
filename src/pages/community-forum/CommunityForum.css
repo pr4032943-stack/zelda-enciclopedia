@@ -48,11 +48,12 @@
   margin-bottom: 3rem;
 }
 
-<<<<<<< HEAD
+
 .search-input {
     width: 100%;
     padding: 15px 15px 15px 55px;
-=======
+}
+
 .forum-status {
   margin: 1rem 0 2rem;
   padding: 0.9rem 1.1rem;
@@ -80,7 +81,6 @@
 .search-input {
     width: 100%;
     padding: 15px 15px 15px 88px;
->>>>>>> ca7a0c4 (Añado .env al gitignore)
     background: rgba(255, 255, 255, 0.05);
     border: 1.5px solid rgba(255, 204, 0, 0.2);
     border-radius: 30px;
@@ -99,8 +99,7 @@
 /* Category Count Hidden */
 .cat-count { display: none; }
 
-<<<<<<< HEAD
-=======
+
 .filter-row {
   display: flex;
   align-items: center;
@@ -121,7 +120,6 @@
   color: var(--color-parchment);
 }
 
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 .forum-content {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -129,15 +127,13 @@
   align-items: start;
 }
 
-<<<<<<< HEAD
-=======
+
 .forum-sidebar {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 .new-discussion-form {
   background: var(--color-primary-dark);
   padding: 2rem;
@@ -297,8 +293,7 @@
   margin-top: 5px;
 }
 
-<<<<<<< HEAD
-=======
+
 .action-buttons {
   display: flex;
   gap: 0.75rem;
@@ -313,7 +308,6 @@
   font-family: var(--font-accent);
 }
 
->>>>>>> ca7a0c4 (Añado .env al gitignore)
 .featured-comments {
     margin-top: 15px;
     padding: 15px;
@@ -399,7 +393,6 @@
   background: #cc0000;
 }
 
-/* Edit/Delete Ghost buttons */
 .admin-actions {
     display: flex;
     gap: 10px;
@@ -438,7 +431,6 @@
   font-family: var(--font-accent);
 }
 
-/* Specific category colors */
 .category-tag.strategies { background-color: #e67e22; }
 .category-tag.lore { background-color: #9b59b6; }
 .category-tag.fan-art { background-color: #e74c3c; }
@@ -456,7 +448,6 @@
   font-size: 1.2rem;
 }
 
-/* Responsive Design */
 @media (max-width: 900px) {
   .forum-content {
     grid-template-columns: 1fr;
@@ -465,8 +456,7 @@
   .new-discussion-form {
     position: static;
   }
-<<<<<<< HEAD
-=======
+
 
   .filter-row {
     flex-direction: column;
@@ -476,7 +466,6 @@
   .category-filter {
     width: 100%;
   }
->>>>>>> ca7a0c4 (Añado .env al gitignore)
   
   .discussion-header {
     flex-direction: column;

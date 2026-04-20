@@ -66,8 +66,8 @@ const Header = () => {
                   Foro
                 </Link>
               </li>
-<<<<<<< HEAD
-=======
+
+
               <li className="nav-item">
                 <Link to="/rss-info" className={`nav-link ${isActive('/rss-info')}`} onClick={closeMenu}>
                   RSS
@@ -83,7 +83,7 @@ const Header = () => {
                   Contacto
                 </Link>
               </li>
->>>>>>> ca7a0c4 (Añado .env al gitignore)
+)
             </ul>
           </nav>
         </div>

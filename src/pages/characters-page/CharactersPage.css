@@ -52,7 +52,6 @@
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Search adjusted */
 .magic-search:focus {
   outline: none;
   box-shadow: var(--box-shadow-glow), 0 0 30px rgba(255, 204, 0, 0.2);
@@ -68,7 +67,7 @@
 }
 
 .character-card {
-  height: 750px; /* Monumental height for a true museum experience */
+  height: 750px; 
   display: flex;
   flex-direction: column;
   background: linear-gradient(135deg, #1b2e1a 0%, #0a110a 100%);
@@ -80,7 +79,6 @@
   position: relative;
 }
 
-/* Sheikah Electronics - Digital Corners */
 .character-card::before, .character-card::after {
   content: '';
   position: absolute;
@@ -114,8 +112,8 @@
 
 .card-image-wrapper {
   position: relative;
-  height: 550px; /* Artwork now dominates the card space */
-  padding: 10px; /* Reduced padding to maximize image size */
+  height: 550px;
+  padding: 10px; 
 }
 
 .card-image-wrapper::after {
@@ -130,7 +128,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 5px; /* Minimal padding for maximum visual impact */
+  padding: 5px; 
   z-index: 1;
   position: relative;
   transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -189,7 +187,7 @@
   font-style: italic;
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--color-parchment-dark); /* Improved contrast */
+  color: var(--color-parchment-dark); 
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 

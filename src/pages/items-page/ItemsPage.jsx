@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useEffect } from 'react'
 import data from '../../assets/data.json'
 import InfoModal from '../../components/InfoModal/InfoModal'
@@ -42,7 +41,6 @@ const ItemCard = ({ item, onClick }) => {
 }
 
 const ItemsPage = () => {
-<<<<<<< HEAD
   const [items, setItems] = useState([])
   const [selectedItem, setSelectedItem] = useState(null)
 
@@ -50,11 +48,7 @@ const ItemsPage = () => {
     setItems(data.items)
   }, [])
 
-=======
-  const [items] = useState(data.items)
-  const [selectedItem, setSelectedItem] = useState(null)
 
->>>>>>> ca7a0c4 (Añado .env al gitignore)
   return (
     <div className="items-page">
       <div className="container">

@@ -58,7 +58,6 @@
   padding: 30px;
 }
 
-/* Mystical Aura Pulse */
 .item-image::before {
   content: '';
   position: absolute;
@@ -105,7 +104,7 @@
 }
 
 .card-content h2 {
-  font-size: 1.6rem; /* Slightly smaller title */
+  font-size: 1.6rem; 
   color: var(--color-accent-gold);
   margin-bottom: 8px;
   text-align: center;

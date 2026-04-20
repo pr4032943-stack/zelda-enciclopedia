@@ -181,7 +181,6 @@ const ImportExport = () => {
     <div className="import-export">
       <h2>Import/Export Data Manager</h2>
       
-      {/* Download Section */}
       <div className="section download-section">
         <h3>Quick Download</h3>
         <p>Download your data directly in your preferred format:</p>
@@ -206,7 +205,6 @@ const ImportExport = () => {
         </div>
       </div>
 
-      {/* Import Section */}
       <div className="section import-section">
         <h3>Import Data</h3>
         <div className="import-controls">
@@ -239,7 +237,7 @@ const ImportExport = () => {
         </div>
       </div>
 
-      {/* Export Section */}
+     
       <div className="section export-section">
         <h3>Export Data</h3>
         <div className="export-controls">
